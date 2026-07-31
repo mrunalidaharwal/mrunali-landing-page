@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Mrunali — Build Your Identity. Build Your Business.</title>
-<meta name="description" content="A community for women entrepreneurs to build their identity, grow their business, and lead with confidence — guided by Mrunali." />
+<title>GrowthStack AI — Turn Your Skill Into a Business That Sells While You Sleep</title>
+<meta name="description" content="GrowthStack AI helps women entrepreneurs turn their skills into profitable, systemised businesses using AI tools, proven funnels, and hands-on guidance from Mrunali. Join the free live masterclass." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <style>
   :root {
     --cream: #FDF7F1;
@@ -17,102 +17,106 @@
     --berry: #6B2D5C;
     --berry-dark: #4A1F42;
     --coral: #F0705A;
+    --coral-dark: #d94f3d;
     --gold: #E0A458;
+    --green: #1f9d6b;
     --white: #ffffff;
     --line: #EADFD4;
     --shadow: 0 18px 40px -20px rgba(74, 31, 66, 0.35);
     --radius: 18px;
   }
-
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
-  body {
-    font-family: 'Inter', system-ui, sans-serif;
-    color: var(--ink);
-    background: var(--cream);
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-  }
+  body { font-family: 'Inter', system-ui, sans-serif; color: var(--ink); background: var(--cream); line-height: 1.6; -webkit-font-smoothing: antialiased; }
   h1, h2, h3, .display { font-family: 'Fraunces', Georgia, serif; line-height: 1.12; font-weight: 600; }
   a { text-decoration: none; color: inherit; }
   img { max-width: 100%; display: block; }
   .container { width: min(1140px, 92%); margin: 0 auto; }
   section { padding: 92px 0; }
-  .eyebrow {
-    display: inline-block;
-    font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
-    color: var(--berry); background: var(--cream-2);
-    padding: 7px 16px; border-radius: 999px; margin-bottom: 20px;
-  }
-  .section-head { max-width: 720px; margin: 0 auto 56px; text-align: center; }
+  .eyebrow { display: inline-block; font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--berry); background: var(--cream-2); padding: 7px 16px; border-radius: 999px; margin-bottom: 20px; }
+  .section-head { max-width: 740px; margin: 0 auto 56px; text-align: center; }
   .section-head h2 { font-size: clamp(28px, 4vw, 44px); }
   .section-head p { color: var(--ink-soft); font-size: 18px; margin-top: 16px; }
 
-  .btn {
-    display: inline-flex; align-items: center; gap: 8px;
-    font-weight: 600; font-size: 16px;
-    padding: 15px 28px; border-radius: 999px; cursor: pointer; border: 0;
-    transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
-  }
+  .btn { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; font-size: 16px; padding: 15px 30px; border-radius: 999px; cursor: pointer; border: 0; transition: transform .2s ease, box-shadow .2s ease, background .2s ease; font-family: 'Inter', sans-serif; }
   .btn-primary { background: var(--coral); color: #fff; box-shadow: 0 12px 26px -12px rgba(240,112,90,.7); }
-  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 18px 34px -12px rgba(240,112,90,.8); }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 18px 34px -12px rgba(240,112,90,.85); }
   .btn-ghost { background: transparent; color: var(--berry); border: 1.5px solid var(--berry); }
   .btn-ghost:hover { background: var(--berry); color: #fff; }
-  .btn-light { background: #fff; color: var(--berry); }
+  .btn-light { background: #fff; color: var(--coral-dark); }
   .btn-light:hover { transform: translateY(-2px); }
+  .btn-lg { padding: 18px 38px; font-size: 17px; }
+
+  /* Announcement bar */
+  .announce { background: var(--berry-dark); color: #fff; text-align: center; font-size: 14px; padding: 10px 16px; }
+  .announce strong { color: var(--gold); }
+  .announce a { text-decoration: underline; font-weight: 600; margin-left: 8px; }
 
   /* Header */
-  header {
-    position: sticky; top: 0; z-index: 50;
-    background: rgba(253,247,241,.88); backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--line);
-  }
+  header { position: sticky; top: 0; z-index: 50; background: rgba(253,247,241,.9); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
   .nav { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; }
-  .logo { font-family: 'Fraunces', serif; font-weight: 700; font-size: 24px; color: var(--berry); letter-spacing: .01em; }
+  .logo { font-family: 'Fraunces', serif; font-weight: 700; font-size: 23px; color: var(--berry); letter-spacing: .01em; }
   .logo span { color: var(--coral); }
-  .nav-links { display: flex; gap: 30px; list-style: none; }
+  .nav-links { display: flex; gap: 28px; list-style: none; }
   .nav-links a { font-size: 15px; font-weight: 500; color: var(--ink-soft); }
   .nav-links a:hover { color: var(--berry); }
   .nav-cta { display: flex; align-items: center; gap: 14px; }
   .menu-toggle { display: none; background: none; border: 0; font-size: 26px; color: var(--berry); cursor: pointer; }
 
   /* Hero */
-  .hero { padding: 70px 0 80px; background: linear-gradient(180deg, var(--cream) 0%, var(--cream-2) 100%); }
-  .hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center; }
-  .hero h1 { font-size: clamp(38px, 5.5vw, 62px); font-weight: 700; }
+  .hero { padding: 64px 0 80px; background: radial-gradient(1200px 500px at 80% -10%, #fbe4dd 0%, transparent 60%), linear-gradient(180deg, var(--cream) 0%, var(--cream-2) 100%); }
+  .hero-grid { display: grid; grid-template-columns: 1.08fr 0.92fr; gap: 56px; align-items: center; }
+  .badge-live { display: inline-flex; align-items: center; gap: 9px; background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 8px 16px; font-size: 13px; font-weight: 600; color: var(--berry); margin-bottom: 22px; }
+  .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--coral); box-shadow: 0 0 0 0 rgba(240,112,90,.6); animation: pulse 1.8s infinite; }
+  @keyframes pulse { 0%{box-shadow:0 0 0 0 rgba(240,112,90,.55);} 70%{box-shadow:0 0 0 10px rgba(240,112,90,0);} 100%{box-shadow:0 0 0 0 rgba(240,112,90,0);} }
+  .hero h1 { font-size: clamp(36px, 5vw, 60px); font-weight: 700; letter-spacing: -0.01em; }
   .hero h1 em { font-style: normal; color: var(--coral); }
-  .hero p.lead { font-size: 19px; color: var(--ink-soft); margin: 24px 0 32px; max-width: 520px; }
-  .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
-  .hero-stats { display: flex; gap: 34px; margin-top: 44px; flex-wrap: wrap; }
-  .stat .num { font-family: 'Fraunces', serif; font-size: 30px; font-weight: 700; color: var(--berry); }
-  .stat .label { font-size: 14px; color: var(--ink-soft); }
+  .hero p.lead { font-size: 19px; color: var(--ink-soft); margin: 22px 0 26px; max-width: 540px; }
+  .hero-bullets { list-style: none; margin: 0 0 30px; display: grid; gap: 10px; }
+  .hero-bullets li { display: flex; gap: 10px; align-items: flex-start; font-size: 16px; color: var(--ink); }
+  .hero-bullets .ck { color: var(--green); font-weight: 800; flex-shrink: 0; }
+  .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
+  .hero-actions .micro { font-size: 13px; color: var(--ink-soft); }
+  .social-proof { display: flex; align-items: center; gap: 14px; margin-top: 30px; }
+  .avatars { display: flex; }
+  .avatars span { width: 40px; height: 40px; border-radius: 50%; border: 2px solid var(--cream); margin-left: -12px; background: linear-gradient(135deg, var(--berry), var(--coral)); color:#fff; font-weight:700; display:flex; align-items:center; justify-content:center; font-size: 14px; }
+  .avatars span:first-child { margin-left: 0; }
+  .social-proof .txt { font-size: 14px; color: var(--ink-soft); }
+  .social-proof .stars { color: var(--gold); }
+
   .hero-media { position: relative; }
-  .media-frame {
-    aspect-ratio: 4/5; border-radius: 24px; overflow: hidden; position: relative;
-    background: linear-gradient(135deg, var(--berry) 0%, var(--berry-dark) 100%);
-    box-shadow: var(--shadow); display: flex; align-items: center; justify-content: center;
-  }
-  .placeholder-note {
-    color: rgba(255,255,255,.85); text-align: center; padding: 24px; font-size: 15px;
-  }
+  .media-frame { aspect-ratio: 4/5; border-radius: 24px; overflow: hidden; position: relative; background: linear-gradient(135deg, var(--berry) 0%, var(--berry-dark) 100%); box-shadow: var(--shadow); display: flex; align-items: center; justify-content: center; }
+  .placeholder-note { color: rgba(255,255,255,.85); text-align: center; padding: 24px; font-size: 15px; }
   .placeholder-note strong { display:block; font-size: 17px; margin-bottom: 6px; color:#fff; }
-  .play-badge {
-    position: absolute; bottom: 20px; left: 20px; right: 20px;
-    background: rgba(255,255,255,.92); border-radius: 14px; padding: 12px 16px;
-    display: flex; align-items: center; gap: 12px; backdrop-filter: blur(4px);
-  }
+  .play-badge { position: absolute; bottom: 20px; left: 20px; right: 20px; background: rgba(255,255,255,.93); border-radius: 14px; padding: 12px 16px; display: flex; align-items: center; gap: 12px; backdrop-filter: blur(4px); }
   .play-circle { width: 42px; height: 42px; border-radius: 50%; background: var(--coral); display:flex; align-items:center; justify-content:center; color:#fff; flex-shrink:0; }
   .play-badge .t1 { font-weight: 600; font-size: 14px; }
   .play-badge .t2 { font-size: 12px; color: var(--ink-soft); }
+  .float-card { position: absolute; top: 22px; left: -18px; background: #fff; border-radius: 14px; padding: 12px 16px; box-shadow: var(--shadow); font-size: 13px; }
+  .float-card .big { font-family:'Fraunces',serif; font-weight:700; font-size: 20px; color: var(--berry); }
 
-  /* Why */
-  .why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; margin-top: 10px; }
+  /* Logo strip */
+  .strip { background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 26px 0; }
+  .strip-inner { display: flex; align-items: center; justify-content: center; gap: 40px; flex-wrap: wrap; }
+  .strip span { font-size: 14px; color: var(--ink-soft); font-weight: 600; letter-spacing: .04em; opacity: .8; }
+
+  /* Pain / agitation */
+  .pain { background: var(--cream); }
+  .pain-grid { display:grid; grid-template-columns: repeat(3,1fr); gap: 22px; margin-top: 10px; }
+  .pain-card { background:#fff; border:1px solid var(--line); border-radius: var(--radius); padding: 28px; }
+  .pain-card .ic { font-size: 24px; }
+  .pain-card h3 { font-size: 18px; margin: 12px 0 8px; }
+  .pain-card p { color: var(--ink-soft); font-size: 15px; }
+  .pain-turn { text-align:center; margin-top: 44px; font-family:'Fraunces',serif; font-size: clamp(20px,2.6vw,26px); color: var(--berry); }
+
+  /* Why / outcomes */
+  .why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
   .why-card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 30px; }
   .why-card .ic { font-size: 26px; }
   .why-card h3 { font-size: 20px; margin: 14px 0 8px; }
   .why-card p { color: var(--ink-soft); font-size: 15px; }
 
-  /* Who it's for */
+  /* Who */
   .who { background: var(--cream-2); }
   .who-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
   .who-card { background: #fff; border-radius: var(--radius); padding: 28px; border: 1px solid var(--line); transition: transform .2s ease, box-shadow .2s; }
@@ -124,12 +128,11 @@
   /* Journey */
   .journey-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
   .step { position: relative; padding: 30px 24px; background: #fff; border-radius: var(--radius); border: 1px solid var(--line); }
-  .step .n { font-family: 'Fraunces', serif; font-size: 44px; font-weight: 700; color: var(--cream-2); line-height: 1; }
-  .step:nth-child(odd) .n { color: #f2ddd0; }
+  .step .n { font-family: 'Fraunces', serif; font-size: 44px; font-weight: 700; color: #f2ddd0; line-height: 1; }
   .step h3 { font-size: 19px; margin: 8px 0 8px; }
   .step p { font-size: 14px; color: var(--ink-soft); }
 
-  /* Command center */
+  /* Command */
   .command { background: linear-gradient(160deg, var(--berry) 0%, var(--berry-dark) 100%); color: #fff; }
   .command .section-head h2 { color: #fff; }
   .command .section-head p { color: rgba(255,255,255,.8); }
@@ -140,7 +143,7 @@
   .cmd-card h3 { color: #fff; font-size: 20px; margin: 14px 0 8px; }
   .cmd-card p { color: rgba(255,255,255,.78); font-size: 15px; }
 
-  /* Member journeys */
+  /* Members */
   .members-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
   .member-card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 30px; }
   .member-card .emoji { font-size: 30px; }
@@ -153,11 +156,7 @@
   /* Founder */
   .founder { background: var(--cream-2); }
   .founder-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 52px; align-items: center; }
-  .founder-photo {
-    aspect-ratio: 1/1; border-radius: 24px; overflow: hidden;
-    background: linear-gradient(135deg, var(--gold) 0%, var(--coral) 100%);
-    display:flex; align-items:center; justify-content:center; box-shadow: var(--shadow);
-  }
+  .founder-photo { aspect-ratio: 1/1; border-radius: 24px; overflow: hidden; background: linear-gradient(135deg, var(--gold) 0%, var(--coral) 100%); display:flex; align-items:center; justify-content:center; box-shadow: var(--shadow); }
   .founder h2 { font-size: clamp(28px, 4vw, 40px); }
   .founder p { color: var(--ink-soft); margin-top: 18px; font-size: 16px; }
   .founder .fquote { margin-top: 22px; font-family: 'Fraunces', serif; font-size: 20px; color: var(--berry); font-style: italic; }
@@ -173,21 +172,23 @@
   .tst-person .nm { font-weight: 600; font-size: 15px; }
   .tst-person .rl { font-size: 13px; color: var(--ink-soft); }
 
-  /* Trust */
-  .trust { background: var(--cream-2); }
-  .trust-badge { text-align:center; margin-bottom: 44px; }
-  .trust-badge .rate { font-family:'Fraunces',serif; font-size: 40px; font-weight:700; color: var(--berry); }
-  .trust-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-  .review { background:#fff; border:1px solid var(--line); border-radius: 14px; padding: 22px; }
-  .review .stars { font-size: 14px; }
-  .review h4 { font-size: 15px; margin: 8px 0 4px; }
-  .review p { font-size: 14px; color: var(--ink-soft); }
-  .review .meta { font-size: 12px; color: #9a8f86; margin-top: 12px; }
+  /* FAQ */
+  .faq { background: var(--cream-2); }
+  .faq-wrap { max-width: 760px; margin: 0 auto; }
+  .faq-item { background:#fff; border:1px solid var(--line); border-radius: 14px; margin-bottom: 14px; overflow: hidden; }
+  .faq-q { width:100%; text-align:left; background:none; border:0; padding: 20px 24px; font-size: 16px; font-weight: 600; color: var(--ink); cursor: pointer; display:flex; justify-content:space-between; gap: 16px; align-items:center; font-family:'Inter',sans-serif; }
+  .faq-q .pm { color: var(--coral); font-size: 22px; flex-shrink:0; transition: transform .2s; }
+  .faq-a { max-height: 0; overflow: hidden; transition: max-height .3s ease; }
+  .faq-a p { padding: 0 24px 20px; color: var(--ink-soft); font-size: 15px; }
+  .faq-item.open .faq-a { max-height: 240px; }
+  .faq-item.open .pm { transform: rotate(45deg); }
 
-  /* Final CTA */
-  .final { background: linear-gradient(160deg, var(--coral) 0%, #d94f3d 100%); color: #fff; text-align: center; }
-  .final h2 { font-size: clamp(30px, 4.5vw, 48px); color: #fff; max-width: 760px; margin: 0 auto; }
-  .final p { font-size: 19px; color: rgba(255,255,255,.9); margin: 20px auto 34px; max-width: 560px; }
+  /* Final */
+  .final { background: linear-gradient(160deg, var(--coral) 0%, var(--coral-dark) 100%); color: #fff; text-align: center; }
+  .final h2 { font-size: clamp(30px, 4.5vw, 48px); color: #fff; max-width: 780px; margin: 0 auto; }
+  .final p { font-size: 19px; color: rgba(255,255,255,.92); margin: 20px auto 16px; max-width: 580px; }
+  .final .urgency { font-size: 14px; color: rgba(255,255,255,.85); margin-bottom: 30px; }
+  .final .guarantee { margin-top: 20px; font-size: 14px; color: rgba(255,255,255,.85); }
 
   /* Footer */
   footer { background: var(--berry-dark); color: rgba(255,255,255,.8); padding: 56px 0 34px; text-align: center; }
@@ -198,41 +199,45 @@
   footer .fnav a:hover { color: #fff; }
   footer .copy { font-size: 13px; color: rgba(255,255,255,.5); border-top: 1px solid rgba(255,255,255,.12); padding-top: 22px; }
 
-  /* Responsive */
   @media (max-width: 900px) {
     .hero-grid, .founder-grid { grid-template-columns: 1fr; }
     .founder-photo { max-width: 420px; margin: 0 auto; }
     .why-grid, .cmd-grid { grid-template-columns: 1fr; }
-    .who-grid, .journey-grid, .members-grid, .tst-grid, .trust-grid { grid-template-columns: repeat(2, 1fr); }
+    .who-grid, .journey-grid, .members-grid, .tst-grid, .pain-grid { grid-template-columns: repeat(2, 1fr); }
     .nav-links { display: none; }
     .menu-toggle { display: block; }
     .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 70px; left: 0; right: 0; background: var(--cream); padding: 20px 6%; gap: 18px; border-bottom: 1px solid var(--line); }
+    .float-card { display: none; }
   }
   @media (max-width: 560px) {
-    section { padding: 64px 0; }
-    .who-grid, .journey-grid, .members-grid, .tst-grid, .trust-grid { grid-template-columns: 1fr; }
-    .hero-stats { gap: 24px; }
+    section { padding: 60px 0; }
+    .who-grid, .journey-grid, .members-grid, .tst-grid, .pain-grid { grid-template-columns: 1fr; }
     .nav-cta .btn-ghost { display: none; }
   }
 </style>
 </head>
 <body>
 
+<!-- ANNOUNCEMENT -->
+<div class="announce">
+  🎓 Next FREE Live Masterclass: <strong>Saturday, 7:00 PM IST</strong> — limited seats
+  <a href="workshop.html">Save my spot →</a>
+</div>
+
 <!-- HEADER -->
 <header>
   <div class="container nav">
-    <div class="logo">Mrunali<span>.</span></div>
+    <div class="logo">GrowthStack<span> AI</span></div>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#why">Why Join</a></li>
+      <li><a href="#why">Why It Works</a></li>
       <li><a href="#who">Who It's For</a></li>
-      <li><a href="#command">Programs</a></li>
-      <li><a href="#stories">Stories</a></li>
-      <li><a href="#reviews">Wall of Love</a></li>
+      <li><a href="#command">What's Inside</a></li>
+      <li><a href="#stories">Results</a></li>
       <li><a href="#founder">About</a></li>
+      <li><a href="#faq">FAQ</a></li>
     </ul>
     <div class="nav-cta">
-      <button class="btn btn-ghost" onclick="location.href='#final'">Log In</button>
-      <button class="btn btn-primary" onclick="location.href='#final'">Join the Tribe</button>
+      <button class="btn btn-primary" onclick="location.href='workshop.html'">Join Free Workshop</button>
       <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
     </div>
   </div>
@@ -242,20 +247,25 @@
 <section class="hero">
   <div class="container hero-grid">
     <div>
-      <span class="eyebrow">For ambitious women entrepreneurs</span>
-      <h1>Build Your Identity. <em>Build Your Business.</em></h1>
-      <p class="lead">A supportive community where talented women turn their skills into visible, profitable businesses — with the systems, tools, and guidance to lead with confidence.</p>
+      <span class="badge-live"><span class="dot"></span> Free live masterclass · 180+ women already inside</span>
+      <h1>Your skill is ready. Your <em>business</em> just needs a system.</h1>
+      <p class="lead">GrowthStack AI turns talented women into confident founders — with AI-powered tools, done-for-you funnels, and step-by-step guidance from Mrunali. No tech background needed. No guesswork left behind.</p>
+      <ul class="hero-bullets">
+        <li><span class="ck">✓</span> Launch or grow a business that runs on systems, not stress</li>
+        <li><span class="ck">✓</span> Use AI to do a week's work in an afternoon</li>
+        <li><span class="ck">✓</span> Get handheld from your first step to your first (and next) sale</li>
+      </ul>
       <div class="hero-actions">
-        <button class="btn btn-primary" onclick="location.href='#final'">Join the Next Workshop →</button>
-        <button class="btn btn-ghost" onclick="location.href='#who'">Explore the Tribe</button>
+        <button class="btn btn-primary btn-lg" onclick="location.href='workshop.html'">Save My Free Seat →</button>
+        <span class="micro">🎟️ It's free · 90 minutes · nothing to install</span>
       </div>
-      <div class="hero-stats">
-        <div class="stat"><div class="num">180+</div><div class="label">Women Empowered</div></div>
-        <div class="stat"><div class="num">Global</div><div class="label">Community</div></div>
-        <div class="stat"><div class="num">AI-Powered</div><div class="label">Growth Systems</div></div>
+      <div class="social-proof">
+        <div class="avatars"><span>A</span><span>P</span><span>R</span><span>N</span><span>M</span></div>
+        <div class="txt"><span class="stars">★★★★★</span><br>Rated 4.9/5 by women who started exactly where you are</div>
       </div>
     </div>
     <div class="hero-media">
+      <div class="float-card"><div class="big">180+</div>women empowered</div>
       <div class="media-frame">
         <div class="placeholder-note">
           <strong>📷 Mrunali's Photo</strong>
@@ -264,8 +274,8 @@
         <div class="play-badge">
           <div class="play-circle">▶</div>
           <div>
-            <div class="t1">A message from Mrunali</div>
-            <div class="t2">Watch the 2-min intro</div>
+            <div class="t1">A 2-min message from Mrunali</div>
+            <div class="t2">Why I built GrowthStack AI</div>
           </div>
         </div>
       </div>
@@ -273,19 +283,43 @@
   </div>
 </section>
 
+<!-- STRIP -->
+<div class="strip">
+  <div class="container strip-inner">
+    <span>AI TOOLS</span><span>·</span><span>FUNNEL TEMPLATES</span><span>·</span><span>META ADS PLAYBOOKS</span><span>·</span><span>LIVE GUIDANCE</span><span>·</span><span>GLOBAL COMMUNITY</span>
+  </div>
+</div>
+
+<!-- PAIN -->
+<section class="pain">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Sound familiar?</span>
+      <h2>You're not behind. You're just missing the system.</h2>
+      <p>The most capable women often stay invisible — not for lack of talent, but for lack of a repeatable path. If any of this is you, you're in exactly the right place.</p>
+    </div>
+    <div class="pain-grid">
+      <div class="pain-card"><div class="ic">🌀</div><h3>"I know I'm good, but no one sees me."</h3><p>You deliver great work, yet customers keep going to louder, less-skilled competitors.</p></div>
+      <div class="pain-card"><div class="ic">📚</div><h3>"I've bought courses that led nowhere."</h3><p>Endless information, zero implementation. You're tired of learning and ready to build.</p></div>
+      <div class="pain-card"><div class="ic">⏳</div><h3>"I'm doing everything myself, all the time."</h3><p>No systems, no automation — just you, stretched thin, wondering how others scale.</p></div>
+    </div>
+    <div class="pain-turn">Imagine trading all of that for a clear map, modern tools, and a room full of women who've got you. 👇</div>
+  </div>
+</section>
+
 <!-- WHY -->
 <section id="why">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow">Why Join</span>
-      <h2>Talent isn't the problem. Visibility and systems are.</h2>
-      <p>So many gifted women have everything it takes to succeed — except a clear path, a proven system, and a community that has their back. That's exactly what we build together.</p>
+      <span class="eyebrow">Why It Works</span>
+      <h2>Talent + the right system = an unfair advantage</h2>
+      <p>GrowthStack AI isn't motivation. It's a build. Here's what you'll actually walk away with.</p>
     </div>
     <div class="why-grid">
-      <div class="why-card"><div class="ic">🌱</div><h3>Step Into Your Identity</h3><p>Move from "just doing the work" to owning your voice, your brand, and your worth as a founder.</p></div>
-      <div class="why-card"><div class="ic">⚙️</div><h3>Systems That Scale</h3><p>Swap guesswork for proven funnels, automations, and playbooks you can implement right away.</p></div>
-      <div class="why-card"><div class="ic">🤝</div><h3>Guidance & Handholding</h3><p>You're never left to figure it out alone. Get step-by-step support at every stage of growth.</p></div>
-      <div class="why-card"><div class="ic">🚀</div><h3>Grow With Momentum</h3><p>Surround yourself with women who are building, launching, and winning — and rise together.</p></div>
+      <div class="why-card"><div class="ic">🌱</div><h3>Step Into Your Identity</h3><p>Go from "someone with a skill" to a founder who owns her voice, her brand, and her worth.</p></div>
+      <div class="why-card"><div class="ic">⚙️</div><h3>Systems That Sell for You</h3><p>Proven funnels and automations that bring in customers while you sleep — no daily hustle required.</p></div>
+      <div class="why-card"><div class="ic">🤖</div><h3>AI as Your Team</h3><p>Content, replies, and admin handled by AI workflows built for non-techies. Reclaim your hours.</p></div>
+      <div class="why-card"><div class="ic">🤝</div><h3>Never Build Alone</h3><p>Live guidance and a community that celebrates your wins and answers when you're stuck.</p></div>
     </div>
   </div>
 </section>
@@ -313,69 +347,63 @@
 <section id="journey">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow">The Journey</span>
-      <h2>The Visionary Journey, in four steps</h2>
-      <p>A simple, proven path from your first workshop to leading a business you're proud of.</p>
+      <span class="eyebrow">The Path</span>
+      <h2>From "someday" to shipping — in four steps</h2>
+      <p>A simple, proven route from your first free workshop to leading a business you're proud of.</p>
     </div>
     <div class="journey-grid">
-      <div class="step"><div class="n">01</div><h3>Join the Workshop</h3><p>Start with a live session that shows you exactly what's possible.</p></div>
+      <div class="step"><div class="n">01</div><h3>Join the Free Workshop</h3><p>Start with a live session that shows you exactly what's possible — and your first move.</p></div>
       <div class="step"><div class="n">02</div><h3>Learn the Foundations</h3><p>Master the core systems behind every profitable modern business.</p></div>
-      <div class="step"><div class="n">03</div><h3>Implement With Guidance</h3><p>Put it into action with templates, tools, and hands-on support.</p></div>
+      <div class="step"><div class="n">03</div><h3>Implement With Guidance</h3><p>Put it into action with templates, AI tools, and hands-on support.</p></div>
       <div class="step"><div class="n">04</div><h3>Grow & Lead</h3><p>Scale with confidence and step fully into your identity as a leader.</p></div>
     </div>
   </div>
 </section>
 
-<!-- COMMAND CENTER -->
+<!-- COMMAND -->
 <section id="command" class="command">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow">Programs</span>
-      <h2>This is where ideas turn into action</h2>
-      <p>Not another course to collect. A command center built for execution — everything you need to build and grow in one place.</p>
+      <span class="eyebrow">What's Inside</span>
+      <h2>Your GrowthStack Command Center</h2>
+      <p>Not another course to collect. A build environment for execution — everything you need in one place.</p>
     </div>
     <div class="cmd-grid">
       <div class="cmd-card"><div class="ic">🤖</div><h3>AI Tools & Automations</h3><p>Save hours every week with AI workflows that handle the repetitive work for you.</p></div>
       <div class="cmd-card"><div class="ic">🧩</div><h3>Funnel & System Templates</h3><p>Plug-and-play templates so you never start from a blank page again.</p></div>
       <div class="cmd-card"><div class="ic">📈</div><h3>Meta Ads Playbooks</h3><p>Simple, tested ad strategies to reach the right people and grow predictably.</p></div>
-      <div class="cmd-card"><div class="ic">🧭</div><h3>Step-by-Step Guidance</h3><p>Clear roadmaps and support so you always know your very next move.</p></div>
+      <div class="cmd-card"><div class="ic">🧭</div><h3>Step-by-Step Guidance</h3><p>Clear roadmaps and live support so you always know your very next move.</p></div>
     </div>
   </div>
 </section>
 
-<!-- MEMBER JOURNEYS -->
+<!-- MEMBERS -->
 <section id="stories">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow">Member Journeys</span>
-      <h2>Real women. Real transformations.</h2>
+      <span class="eyebrow">Real Results</span>
+      <h2>Women who started exactly where you are</h2>
       <p>From uncertain to unstoppable — here's what happens when talent meets the right systems.</p>
     </div>
     <div class="members-grid">
       <div class="member-card">
-        <div class="emoji">👗</div>
-        <h3>The Saree Business Owner</h3>
-        <div class="tag">Before → After</div>
+        <div class="emoji">👗</div><h3>The Saree Business Owner</h3><div class="tag">Before → After</div>
         <p>Selling occasionally to friends, unsure how to reach new customers — now running a recognizable brand with consistent online orders.</p>
         <div class="quote">"I finally see myself as a business owner, not just someone with a hobby."</div>
       </div>
       <div class="member-card">
-        <div class="emoji">💇‍♀️</div>
-        <h3>The Salon Owner</h3>
-        <div class="tag">Before → After</div>
+        <div class="emoji">💇‍♀️</div><h3>The Salon Owner</h3><div class="tag">Before → After</div>
         <p>Relying on walk-ins and word of mouth — now booked out weeks ahead with a steady stream of clients from her marketing.</p>
         <div class="quote">"The handholding made all the difference. I never felt lost."</div>
       </div>
       <div class="member-card">
-        <div class="emoji">🚀</div>
-        <h3>The First-Time Founder</h3>
-        <div class="tag">Before → After</div>
+        <div class="emoji">🚀</div><h3>The First-Time Founder</h3><div class="tag">Before → After</div>
         <p>Starting from complete zero with no tech background — now confidently running her own digital business with real income.</p>
         <div class="quote">"I went from having an idea to actually launching. That's everything."</div>
       </div>
     </div>
     <div class="center-cta">
-      <button class="btn btn-ghost" onclick="location.href='#reviews'">Read Member Stories →</button>
+      <button class="btn btn-primary" onclick="location.href='workshop.html'">Start With the Free Workshop →</button>
     </div>
   </div>
 </section>
@@ -384,18 +412,15 @@
 <section id="founder" class="founder">
   <div class="container founder-grid">
     <div class="founder-photo">
-      <div class="placeholder-note">
-        <strong>📷 Mrunali's Photo</strong>
-        Founder portrait goes here
-      </div>
+      <div class="placeholder-note"><strong>📷 Mrunali's Photo</strong>Founder portrait goes here</div>
     </div>
     <div>
       <span class="eyebrow">About Mrunali</span>
       <h2>Meet Mrunali</h2>
-      <p>Mrunali has guided hundreds of entrepreneurs on their journey from hesitation to confident action. Having built and mentored across the world of digital business, she knows exactly what it takes to turn skill and passion into a real, thriving venture.</p>
-      <p>She built this community around one belief: that with the right systems, tools, and a circle that truly supports you, every woman can build a business that reflects who she is.</p>
+      <p>Mrunali has guided hundreds of entrepreneurs from hesitation to confident action. Having built and mentored across the world of AI-powered digital business, she knows exactly what it takes to turn skill and passion into a real, thriving venture.</p>
+      <p>She built GrowthStack AI on one belief: with the right systems, the right tools, and a circle that truly supports you, every woman can build a business that reflects who she is.</p>
       <div class="fquote">"I see the hunger and potential in every woman — my job is simply to hand her the map."</div>
-      <button class="btn btn-primary" onclick="location.href='#final'">Learn From Mrunali →</button>
+      <button class="btn btn-primary" onclick="location.href='workshop.html'">Learn From Mrunali — Free →</button>
     </div>
   </div>
 </section>
@@ -408,94 +433,70 @@
       <h2>Loved by women building bold things</h2>
     </div>
     <div class="tst-grid">
-      <div class="tst-card">
-        <div class="stars">★★★★★</div>
-        <p>The patience and step-by-step support here is unlike anything I've found. I always know what to do next.</p>
-        <div class="tst-person"><div class="avatar">A</div><div><div class="nm">Anjali R.</div><div class="rl">Product Business Owner</div></div></div>
-      </div>
-      <div class="tst-card">
-        <div class="stars">★★★★★</div>
-        <p>I joined nervous and unsure. A few months in, I have systems, clients, and — finally — real confidence.</p>
-        <div class="tst-person"><div class="avatar">P</div><div><div class="nm">Priya M.</div><div class="rl">Salon Owner</div></div></div>
-      </div>
-      <div class="tst-card">
-        <div class="stars">★★★★★</div>
-        <p>The AI tools alone saved me hours every week. But it's the community that keeps me showing up.</p>
-        <div class="tst-person"><div class="avatar">S</div><div><div class="nm">Sneha K.</div><div class="rl">Coach & Consultant</div></div></div>
-      </div>
-      <div class="tst-card">
-        <div class="stars">★★★★★</div>
-        <p>Mrunali genuinely cares. The handholding got me from idea to launch when I'd been stuck for a year.</p>
-        <div class="tst-person"><div class="avatar">R</div><div><div class="nm">Ritika S.</div><div class="rl">Digital Entrepreneur</div></div></div>
-      </div>
-      <div class="tst-card">
-        <div class="stars">★★★★★</div>
-        <p>Everything is structured and doable. No fluff — just clear steps that actually move my business forward.</p>
-        <div class="tst-person"><div class="avatar">N</div><div><div class="nm">Neha T.</div><div class="rl">Creator & Personal Brand</div></div></div>
-      </div>
-      <div class="tst-card">
-        <div class="stars">★★★★★</div>
-        <p>This community gave me the independence I always wanted. I'm running my own business on my own terms.</p>
-        <div class="tst-person"><div class="avatar">M</div><div><div class="nm">Meera J.</div><div class="rl">Founder</div></div></div>
-      </div>
+      <div class="tst-card"><div class="stars">★★★★★</div><p>The patience and step-by-step support here is unlike anything I've found. I always know what to do next.</p><div class="tst-person"><div class="avatar">A</div><div><div class="nm">Anjali R.</div><div class="rl">Product Business Owner</div></div></div></div>
+      <div class="tst-card"><div class="stars">★★★★★</div><p>I joined nervous and unsure. A few months in, I have systems, clients, and — finally — real confidence.</p><div class="tst-person"><div class="avatar">P</div><div><div class="nm">Priya M.</div><div class="rl">Salon Owner</div></div></div></div>
+      <div class="tst-card"><div class="stars">★★★★★</div><p>The AI tools alone saved me hours every week. But it's the community that keeps me showing up.</p><div class="tst-person"><div class="avatar">S</div><div><div class="nm">Sneha K.</div><div class="rl">Coach & Consultant</div></div></div></div>
+      <div class="tst-card"><div class="stars">★★★★★</div><p>Mrunali genuinely cares. The handholding got me from idea to launch when I'd been stuck for a year.</p><div class="tst-person"><div class="avatar">R</div><div><div class="nm">Ritika S.</div><div class="rl">Digital Entrepreneur</div></div></div></div>
+      <div class="tst-card"><div class="stars">★★★★★</div><p>Everything is structured and doable. No fluff — just clear steps that actually move my business forward.</p><div class="tst-person"><div class="avatar">N</div><div><div class="nm">Neha T.</div><div class="rl">Creator & Personal Brand</div></div></div></div>
+      <div class="tst-card"><div class="stars">★★★★★</div><p>This community gave me the independence I always wanted. I'm running my own business on my own terms.</p><div class="tst-person"><div class="avatar">M</div><div><div class="nm">Meera J.</div><div class="rl">Founder</div></div></div></div>
     </div>
   </div>
 </section>
 
-<!-- TRUST -->
-<section id="reviews" class="trust">
+<!-- FAQ -->
+<section id="faq" class="faq">
   <div class="container">
-    <div class="trust-badge">
-      <span class="eyebrow">Trusted & Rated Excellent</span>
-      <div class="rate">★★★★★ 4.9/5</div>
-      <p style="color:var(--ink-soft)">Based on reviews from our growing community of women founders</p>
+    <div class="section-head">
+      <span class="eyebrow">Questions</span>
+      <h2>Everything you're wondering, answered</h2>
     </div>
-    <div class="trust-grid">
-      <div class="review"><div class="stars">★★★★★</div><h4>Structured and clear</h4><p>Every system is laid out so I can just follow along and get results.</p><div class="meta">Verified member · 2026</div></div>
-      <div class="review"><div class="stars">★★★★★</div><h4>Incredible support</h4><p>The handholding is real. I never feel like I'm figuring it out alone.</p><div class="meta">Verified member · 2026</div></div>
-      <div class="review"><div class="stars">★★★★★</div><h4>Business transformed</h4><p>My little side project is now a real brand with steady customers.</p><div class="meta">Verified member · 2026</div></div>
-      <div class="review"><div class="stars">★★★★★</div><h4>Loved the AI training</h4><p>I had no idea AI could do this much for a small business. Game changer.</p><div class="meta">Verified member · 2026</div></div>
-      <div class="review"><div class="stars">★★★★★</div><h4>Worth every rupee</h4><p>The templates and playbooks paid for themselves within weeks.</p><div class="meta">Verified member · 2026</div></div>
-      <div class="review"><div class="stars">★★★★★</div><h4>A community that cares</h4><p>These women genuinely celebrate your wins. It's rare and special.</p><div class="meta">Verified member · 2026</div></div>
+    <div class="faq-wrap">
+      <div class="faq-item"><button class="faq-q">Do I need any tech or marketing experience? <span class="pm">+</span></button><div class="faq-a"><p>Not at all. GrowthStack AI is built for women starting from zero. Everything is step-by-step, and the AI tools do the heavy lifting for you.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Is the workshop really free? <span class="pm">+</span></button><div class="faq-a"><p>Yes — the live masterclass is 100% free. It's the best way to see how everything works before deciding if the community is right for you.</p></div></div>
+      <div class="faq-item"><button class="faq-q">I'm very busy. How much time does this take? <span class="pm">+</span></button><div class="faq-a"><p>The workshop is about 90 minutes. Inside the community, the whole point is systems and AI that give you time back — you work smarter, not longer.</p></div></div>
+      <div class="faq-item"><button class="faq-q">What kind of business does this work for? <span class="pm">+</span></button><div class="faq-a"><p>Product brands, salons and services, coaching, content and personal brands, and complete beginners. If you have a skill or an idea, there's a path for you.</p></div></div>
+      <div class="faq-item"><button class="faq-q">What happens after I register? <span class="pm">+</span></button><div class="faq-a"><p>You'll get your confirmation and joining details, plus a reminder before we go live. Just show up ready to take notes and take action.</p></div></div>
     </div>
   </div>
 </section>
 
-<!-- FINAL CTA -->
+<!-- FINAL -->
 <section id="final" class="final">
   <div class="container">
-    <h2>This is more than a community</h2>
-    <p>It's the identity, the systems, and the circle of women you need to build the business you've always imagined.</p>
-    <button class="btn btn-light" onclick="alert('Connect this button to your workshop signup link.')">Join the Next Workshop →</button>
+    <h2>Your business is one decision away from real momentum</h2>
+    <p>Join the next free live masterclass and walk away with a clear plan, the tools to run it, and a community that won't let you quit.</p>
+    <div class="urgency">⏰ Seats for each live session are limited — and they fill fast.</div>
+    <button class="btn btn-light btn-lg" onclick="location.href='workshop.html'">Save My Free Seat →</button>
+    <div class="guarantee">No cost · No pressure · Leave with something you can use immediately</div>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
   <div class="container">
-    <div class="logo">Mrunali<span style="color:var(--coral)">.</span></div>
+    <div class="logo">GrowthStack<span style="color:var(--coral)"> AI</span></div>
     <div class="tagline">Your identity. Your business. Your tribe.</div>
     <div class="fnav">
-      <a href="#why">Why Join</a>
+      <a href="#why">Why It Works</a>
       <a href="#who">Who It's For</a>
-      <a href="#command">Programs</a>
-      <a href="#stories">Stories</a>
+      <a href="#command">What's Inside</a>
+      <a href="#stories">Results</a>
       <a href="#founder">About</a>
+      <a href="workshop.html">Free Workshop</a>
     </div>
-    <div class="copy">© 2026 Mrunali. All rights reserved.</div>
+    <div class="copy">© 2026 GrowthStack AI · Led by Mrunali. All rights reserved.</div>
   </div>
 </footer>
 
 <script>
-  // Mobile menu toggle
   document.getElementById('menuToggle').addEventListener('click', function () {
     document.getElementById('navLinks').classList.toggle('open');
   });
-  // Close mobile menu on link click
   document.querySelectorAll('#navLinks a').forEach(function (a) {
-    a.addEventListener('click', function () {
-      document.getElementById('navLinks').classList.remove('open');
-    });
+    a.addEventListener('click', function () { document.getElementById('navLinks').classList.remove('open'); });
+  });
+  document.querySelectorAll('.faq-q').forEach(function (q) {
+    q.addEventListener('click', function () { q.parentElement.classList.toggle('open'); });
   });
 </script>
 </body>
