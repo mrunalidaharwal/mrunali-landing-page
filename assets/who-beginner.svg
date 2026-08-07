@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Aspiring digital entrepreneur at a laptop">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="40%" r="62%">
+      <stop offset="0" stop-color="#EF4444" stop-opacity=".22"/>
+      <stop offset=".5" stop-color="#EF4444" stop-opacity=".05"/>
+      <stop offset="1" stop-color="#EF4444" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="grm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E85450"/><stop offset="1" stop-color="#AA221E"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#g)"/>
+  <ellipse cx="200" cy="102" rx="49" ry="55" fill="#6E3B39"/>
+  <path d="M110 300 Q116 214 200 206 Q284 214 290 300 Z" fill="url(#grm)"/>
+  <rect x="185" y="140" width="30" height="34" rx="13" fill="#E3B085"/>
+  <path d="M156 88 Q146 150 170 196 Q178 160 174 114 Z" fill="#6E3B39"/>
+  <path d="M244 88 Q254 150 230 196 Q222 160 226 114 Z" fill="#6E3B39"/>
+  <ellipse cx="200" cy="104" rx="34" ry="40" fill="#F2C9A6"/>
+  <path d="M170 78 Q182 66 200 65" fill="none" stroke="#F7B4A8" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+  <path d="M167 100 Q172 71 200 69 Q228 71 233 100 Q214 86 200 86 Q186 86 167 100 Z" fill="#6E3B39"/>
+  <ellipse cx="184" cy="116" rx="6" ry="4" fill="#E8A98C" opacity=".55"/>
+  <ellipse cx="216" cy="116" rx="6" ry="4" fill="#E8A98C" opacity=".55"/>
+  <!-- laptop -->
+  <g>
+    <rect x="150" y="228" width="100" height="58" rx="6" fill="#1C1B1E" stroke="#EF4444" stroke-width="2.5"/>
+    <rect x="158" y="236" width="84" height="42" rx="3" fill="#241416"/>
+    <path d="M170 250 h42 M170 260 h58 M170 270 h32" stroke="#EF6B5A" stroke-width="3" stroke-linecap="round"/>
+    <rect x="138" y="286" width="124" height="10" rx="4" fill="#2A2226"/>
+  </g>
+</svg>

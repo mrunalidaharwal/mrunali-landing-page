@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Coach or consultant with a speech bubble">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="40%" r="62%">
+      <stop offset="0" stop-color="#EF4444" stop-opacity=".22"/>
+      <stop offset=".5" stop-color="#EF4444" stop-opacity=".05"/>
+      <stop offset="1" stop-color="#EF4444" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="grm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F0654F"/><stop offset="1" stop-color="#B2301F"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#g)"/>
+  <ellipse cx="200" cy="106" rx="49" ry="55" fill="#6E3B39"/>
+  <path d="M110 300 Q116 208 200 200 Q284 208 290 300 Z" fill="url(#grm)"/>
+  <rect x="185" y="144" width="30" height="36" rx="13" fill="#E3B085"/>
+  <path d="M156 92 Q146 156 170 202 Q178 165 174 118 Z" fill="#6E3B39"/>
+  <path d="M244 92 Q254 156 230 202 Q222 165 226 118 Z" fill="#6E3B39"/>
+  <ellipse cx="200" cy="108" rx="34" ry="40" fill="#F2C9A6"/>
+  <path d="M170 82 Q182 70 200 69" fill="none" stroke="#F7B4A8" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+  <path d="M167 104 Q172 75 200 73 Q228 75 233 104 Q214 90 200 90 Q186 90 167 104 Z" fill="#6E3B39"/>
+  <ellipse cx="184" cy="120" rx="6" ry="4" fill="#E8A98C" opacity=".55"/>
+  <ellipse cx="216" cy="120" rx="6" ry="4" fill="#E8A98C" opacity=".55"/>
+  <!-- speech bubble -->
+  <g>
+    <path d="M300 52 l6 22 l-18 -12 Z" fill="#1C1B1E"/>
+    <rect x="292" y="34" width="96" height="52" rx="13" fill="#1C1B1E" stroke="#EF4444" stroke-width="2.5"/>
+    <circle cx="316" cy="60" r="5" fill="#EF4444"/>
+    <circle cx="340" cy="60" r="5" fill="#F2C9A6"/>
+    <circle cx="364" cy="60" r="5" fill="#EF4444"/>
+  </g>
+</svg>

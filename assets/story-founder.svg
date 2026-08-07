@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="First-time founder launching a business">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="40%" r="62%">
+      <stop offset="0" stop-color="#EF4444" stop-opacity=".22"/>
+      <stop offset=".5" stop-color="#EF4444" stop-opacity=".05"/>
+      <stop offset="1" stop-color="#EF4444" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="grm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EF4444"/><stop offset="1" stop-color="#B21F1F"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#g)"/>
+  <ellipse cx="196" cy="102" rx="49" ry="55" fill="#6E3B39"/>
+  <path d="M106 300 Q112 214 196 206 Q280 214 286 300 Z" fill="url(#grm)"/>
+  <rect x="181" y="140" width="30" height="34" rx="13" fill="#E3B085"/>
+  <path d="M152 88 Q142 150 166 196 Q174 160 170 114 Z" fill="#6E3B39"/>
+  <path d="M240 88 Q250 150 226 196 Q218 160 222 114 Z" fill="#6E3B39"/>
+  <ellipse cx="196" cy="104" rx="34" ry="40" fill="#F2C9A6"/>
+  <path d="M166 78 Q178 66 196 65" fill="none" stroke="#F7B4A8" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+  <path d="M163 100 Q168 71 196 69 Q224 71 229 100 Q210 86 196 86 Q182 86 163 100 Z" fill="#6E3B39"/>
+  <ellipse cx="180" cy="116" rx="6" ry="4" fill="#E8A98C" opacity=".55"/>
+  <ellipse cx="212" cy="116" rx="6" ry="4" fill="#E8A98C" opacity=".55"/>
+  <!-- laptop -->
+  <g>
+    <rect x="146" y="230" width="96" height="56" rx="6" fill="#1C1B1E" stroke="#EF4444" stroke-width="2.5"/>
+    <rect x="154" y="238" width="80" height="40" rx="3" fill="#241416"/>
+    <path d="M166 250 h40 M166 260 h54 M166 270 h30" stroke="#EF6B5A" stroke-width="3" stroke-linecap="round"/>
+    <rect x="134" y="286" width="120" height="10" rx="4" fill="#2A2226"/>
+  </g>
+  <!-- rocket -->
+  <g transform="translate(304,70) rotate(32)">
+    <path d="M0 0 Q11 -30 22 0 Q17 12 11 14 Q5 12 0 0 Z" fill="#F2C9A6"/>
+    <circle cx="11" cy="-8" r="4.5" fill="#1C1B1E"/>
+    <path d="M0 0 L-8 10 L1 5 Z" fill="#EF4444"/>
+    <path d="M22 0 L30 10 L21 5 Z" fill="#EF4444"/>
+    <path d="M5 14 Q11 30 17 14 Q11 20 5 14 Z" fill="#F7B44A"/>
+  </g>
+  <path d="M336 128 l3 9 l9 3 l-9 3 l-3 9 l-3 -9 l-9 -3 l9 -3 Z" fill="#EF6B5A" opacity=".8"/>
+</svg>
