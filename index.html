@@ -129,6 +129,13 @@
   .who-card h3 { font-size: 21px; margin: 14px 0 6px; }
   .who-card p { font-size: 14px; color: var(--ink-soft); }
 
+  /* Section image (photo replaces emoji; emoji shows as fallback until photo is added) */
+  .card-photo { position: relative; aspect-ratio: 4/3; border-radius: 12px; overflow: hidden; margin-bottom: 16px;
+    background: linear-gradient(135deg, #241416 0%, #0f0c0c 100%); border: 1px solid var(--line-red);
+    display: flex; align-items: center; justify-content: center; }
+  .card-photo .ph-emoji { font-size: 40px; opacity: .9; }
+  .card-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 22%; }
+
   /* Journey */
   .journey-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
   .step { position: relative; padding: 30px 24px; background: var(--panel); border-radius: var(--radius); border: 1px solid var(--line); }
@@ -334,12 +341,12 @@
       <p>Whatever stage you're at, if you're serious about building something of your own, you belong here.</p>
     </div>
     <div class="who-grid">
-      <div class="who-card"><div class="emoji">👗</div><h3>Product Business Owners</h3><p>Turn your handmade or curated products into a brand people seek out.</p></div>
-      <div class="who-card"><div class="emoji">💇‍♀️</div><h3>Salon & Service Providers</h3><p>Fill your calendar and build loyal clients with modern marketing.</p></div>
-      <div class="who-card"><div class="emoji">🎯</div><h3>Coaches & Consultants</h3><p>Package your expertise into offers that sell while you sleep.</p></div>
-      <div class="who-card"><div class="emoji">📱</div><h3>Creators & Personal Brands</h3><p>Grow an audience that trusts you — and knows how to buy from you.</p></div>
-      <div class="who-card"><div class="emoji">🚀</div><h3>Aspiring Digital Entrepreneurs</h3><p>Start from zero with a clear roadmap and real support.</p></div>
-      <div class="who-card"><div class="emoji">✨</div><h3>Women Seeking Independence</h3><p>Build income and confidence entirely on your own terms.</p></div>
+      <div class="who-card"><div class="card-photo"><span class="ph-emoji">👗</span><img src="assets/who-product.jpg" alt="Woman product business owner in her boutique" loading="lazy" onerror="this.remove()"></div><h3>Product Business Owners</h3><p>Turn your handmade or curated products into a brand people seek out.</p></div>
+      <div class="who-card"><div class="card-photo"><span class="ph-emoji">💇‍♀️</span><img src="assets/who-salon.jpg" alt="Woman salon owner in her salon" loading="lazy" onerror="this.remove()"></div><h3>Salon & Service Providers</h3><p>Fill your calendar and build loyal clients with modern marketing.</p></div>
+      <div class="who-card"><div class="card-photo"><span class="ph-emoji">🎯</span><img src="assets/who-coach.jpg" alt="Woman coach or consultant" loading="lazy" onerror="this.remove()"></div><h3>Coaches & Consultants</h3><p>Package your expertise into offers that sell while you sleep.</p></div>
+      <div class="who-card"><div class="card-photo"><span class="ph-emoji">📱</span><img src="assets/who-creator.jpg" alt="Woman content creator filming on her phone" loading="lazy" onerror="this.remove()"></div><h3>Creators & Personal Brands</h3><p>Grow an audience that trusts you — and knows how to buy from you.</p></div>
+      <div class="who-card"><div class="card-photo"><span class="ph-emoji">🚀</span><img src="assets/who-beginner.jpg" alt="Young woman starting her digital business at a laptop" loading="lazy" onerror="this.remove()"></div><h3>Aspiring Digital Entrepreneurs</h3><p>Start from zero with a clear roadmap and real support.</p></div>
+      <div class="who-card"><div class="card-photo"><span class="ph-emoji">✨</span><img src="assets/who-independent.jpg" alt="Confident, independent woman" loading="lazy" onerror="this.remove()"></div><h3>Women Seeking Independence</h3><p>Build income and confidence entirely on your own terms.</p></div>
     </div>
   </div>
 </section>
@@ -388,17 +395,17 @@
     </div>
     <div class="members-grid">
       <div class="member-card">
-        <div class="emoji">👗</div><h3>The Saree Business Owner</h3><div class="tag">Before → After</div>
+        <div class="card-photo"><span class="ph-emoji">👗</span><img src="assets/story-saree.jpg" alt="Proud saree business owner in her store" loading="lazy" onerror="this.remove()"></div><h3>The Saree Business Owner</h3><div class="tag">Before → After</div>
         <p>Selling occasionally to friends, unsure how to reach new customers — now running a recognizable brand with consistent online orders.</p>
         <div class="quote">"I finally see myself as a business owner, not just someone with a hobby."</div>
       </div>
       <div class="member-card">
-        <div class="emoji">💇‍♀️</div><h3>The Salon Owner</h3><div class="tag">Before → After</div>
+        <div class="card-photo"><span class="ph-emoji">💇‍♀️</span><img src="assets/story-salon.jpg" alt="Confident salon owner in a busy salon" loading="lazy" onerror="this.remove()"></div><h3>The Salon Owner</h3><div class="tag">Before → After</div>
         <p>Relying on walk-ins and word of mouth — now booked out weeks ahead with a steady stream of clients from her marketing.</p>
         <div class="quote">"The handholding made all the difference. I never felt lost."</div>
       </div>
       <div class="member-card">
-        <div class="emoji">🚀</div><h3>The First-Time Founder</h3><div class="tag">Before → After</div>
+        <div class="card-photo"><span class="ph-emoji">🚀</span><img src="assets/story-founder.jpg" alt="Excited first-time woman founder launching at her laptop" loading="lazy" onerror="this.remove()"></div><h3>The First-Time Founder</h3><div class="tag">Before → After</div>
         <p>Starting from complete zero with no tech background — now confidently running her own digital business with real income.</p>
         <div class="quote">"I went from having an idea to actually launching. That's everything."</div>
       </div>
