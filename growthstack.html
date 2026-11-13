@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GrowthStack AI — Turn Your Skill Into a Business That Sells While You Sleep</title>
+<meta name="description" content="GrowthStack AI helps women entrepreneurs turn their skills into profitable, systemised businesses using AI tools, proven funnels, and hands-on guidance from Mrunali. Join the free live masterclass." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --cream: #0A0A0A;
+    --cream-2: #111111;
+    --ink: #FFFFFF;
+    --ink-soft: #B9B4B1;
+    --berry: #EF4444;
+    --berry-dark: #B91C1C;
+    --coral: #EF4444;
+    --coral-dark: #DC2626;
+    --gold: #EF4444;
+    --green: #5ED6A0;
+    --white: #ffffff;
+    --line: rgba(255,255,255,0.10);
+    --line-red: rgba(239,68,68,0.28);
+    --panel: rgba(255,255,255,0.04);
+    --panel-2: rgba(255,255,255,0.06);
+    --bg-2: #111111;
+    --shadow: 0 18px 40px -20px rgba(0, 0, 0, 0.7);
+    --radius: 18px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Manrope', system-ui, sans-serif; color: var(--ink); background: var(--cream); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  h1, h2, h3, .display { font-family: 'Cormorant Garamond', Georgia, serif; line-height: 1.12; font-weight: 600; }
+  a { text-decoration: none; color: inherit; }
+  img { max-width: 100%; display: block; }
+  .container { width: min(1140px, 92%); margin: 0 auto; }
+  section { padding: 92px 0; }
+  .eyebrow { display: inline-block; font-size: 13px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--berry); background: rgba(239,68,68,0.10); border: 1px solid var(--line-red); padding: 7px 16px; border-radius: 999px; margin-bottom: 20px; }
+  .section-head { max-width: 740px; margin: 0 auto 56px; text-align: center; }
+  .section-head h2 { font-size: clamp(30px, 4.4vw, 48px); }
+  .section-head p { color: var(--ink-soft); font-size: 18px; margin-top: 16px; }
+
+  .btn { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; font-size: 16px; padding: 15px 30px; border-radius: 13px; cursor: pointer; border: 0; transition: transform .2s ease, box-shadow .2s ease, background .2s ease; font-family: 'Manrope', sans-serif; }
+  .btn-primary { background: linear-gradient(135deg, var(--coral) 0%, var(--coral-dark) 100%); color: #fff; box-shadow: 0 14px 34px -12px rgba(239,112,90,.6); }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 20px 44px -12px rgba(239,68,68,.8); }
+  .btn-ghost { background: transparent; color: #fff; border: 1.5px solid var(--line); }
+  .btn-ghost:hover { border-color: var(--berry); color: var(--berry); }
+  .btn-light { background: #fff; color: var(--coral-dark); }
+  .btn-light:hover { transform: translateY(-2px); }
+  .btn-lg { padding: 18px 38px; font-size: 17px; }
+
+  /* Announcement bar */
+  .announce { background: linear-gradient(90deg, var(--coral-dark), var(--coral)); color: #fff; text-align: center; font-size: 14px; padding: 10px 16px; }
+  .announce strong { color: #fff; }
+  .announce a { text-decoration: underline; font-weight: 700; margin-left: 8px; color: #fff; }
+
+  /* Header */
+  header { position: sticky; top: 0; z-index: 50; background: rgba(10,10,10,.82); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+  .nav { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; }
+  .logo { font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: 25px; color: #fff; letter-spacing: .01em; }
+  .logo span { color: var(--coral); }
+  .nav-links { display: flex; gap: 28px; list-style: none; }
+  .nav-links a { font-size: 15px; font-weight: 500; color: var(--ink-soft); }
+  .nav-links a:hover { color: #fff; }
+  .nav-cta { display: flex; align-items: center; gap: 14px; }
+  .menu-toggle { display: none; background: none; border: 0; font-size: 26px; color: #fff; cursor: pointer; }
+
+  /* Hero */
+  .hero { padding: 64px 0 80px; background: radial-gradient(1200px 500px at 80% -10%, rgba(239,68,68,0.16) 0%, transparent 60%), linear-gradient(180deg, var(--cream) 0%, #0d0d0d 100%); }
+  .hero-grid { display: grid; grid-template-columns: 1.08fr 0.92fr; gap: 56px; align-items: center; }
+  .badge-live { display: inline-flex; align-items: center; gap: 9px; background: var(--panel); border: 1px solid var(--line); border-radius: 999px; padding: 8px 16px; font-size: 13px; font-weight: 600; color: #fff; margin-bottom: 22px; }
+  .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--coral); box-shadow: 0 0 0 0 rgba(239,68,68,.6); animation: pulse 1.8s infinite; }
+  @keyframes pulse { 0%{box-shadow:0 0 0 0 rgba(239,68,68,.55);} 70%{box-shadow:0 0 0 10px rgba(239,68,68,0);} 100%{box-shadow:0 0 0 0 rgba(239,68,68,0);} }
+  .hero h1 { font-size: clamp(38px, 5.4vw, 66px); font-weight: 700; letter-spacing: -0.01em; }
+  .hero h1 em { font-style: italic; color: var(--coral); }
+  .hero p.lead { font-size: 19px; color: var(--ink-soft); margin: 22px 0 26px; max-width: 540px; }
+  .hero-bullets { list-style: none; margin: 0 0 30px; display: grid; gap: 10px; }
+  .hero-bullets li { display: flex; gap: 10px; align-items: flex-start; font-size: 16px; color: #EDE9E7; }
+  .hero-bullets .ck { color: var(--green); font-weight: 800; flex-shrink: 0; }
+  .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
+  .hero-actions .micro { font-size: 13px; color: var(--ink-soft); }
+  .social-proof { display: flex; align-items: center; gap: 14px; margin-top: 30px; }
+  .avatars { display: flex; }
+  .avatars span { width: 40px; height: 40px; border-radius: 50%; border: 2px solid var(--cream); margin-left: -12px; background: linear-gradient(135deg, var(--berry), var(--coral-dark)); color:#fff; font-weight:700; display:flex; align-items:center; justify-content:center; font-size: 14px; }
+  .avatars span:first-child { margin-left: 0; }
+  .social-proof .txt { font-size: 14px; color: var(--ink-soft); }
+  .social-proof .stars { color: var(--gold); }
+
+  .hero-media { position: relative; }
+  .media-frame { aspect-ratio: 4/5; border-radius: 24px; overflow: hidden; position: relative; background: linear-gradient(135deg, #241416 0%, #0f0c0c 100%); border: 1px solid var(--line-red); box-shadow: 0 30px 70px -30px rgba(239,68,68,.35); display: flex; align-items: center; justify-content: center; }
+  .placeholder-note { color: rgba(255,255,255,.85); text-align: center; padding: 24px; font-size: 15px; }
+  .placeholder-note strong { display:block; font-size: 17px; margin-bottom: 6px; color:#fff; }
+  .play-badge { position: absolute; bottom: 20px; left: 20px; right: 20px; background: rgba(18,16,16,.82); border: 1px solid var(--line); border-radius: 14px; padding: 12px 16px; display: flex; align-items: center; gap: 12px; backdrop-filter: blur(6px); }
+  .play-circle { width: 42px; height: 42px; border-radius: 50%; background: var(--coral); display:flex; align-items:center; justify-content:center; color:#fff; flex-shrink:0; }
+  .play-badge .t1 { font-weight: 600; font-size: 14px; color: #fff; }
+  .play-badge .t2 { font-size: 12px; color: var(--ink-soft); }
+  .float-card { position: absolute; top: 22px; left: -18px; background: #141212; border: 1px solid var(--line-red); border-radius: 14px; padding: 12px 16px; box-shadow: var(--shadow); font-size: 13px; color: #fff; }
+  .float-card .big { font-family:'Cormorant Garamond',serif; font-weight:700; font-size: 22px; color: var(--coral); }
+
+  /* Logo strip */
+  .strip { background: var(--bg-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 26px 0; }
+  .strip-inner { display: flex; align-items: center; justify-content: center; gap: 40px; flex-wrap: wrap; }
+  .strip span { font-size: 14px; color: var(--ink-soft); font-weight: 600; letter-spacing: .04em; opacity: .85; }
+
+  /* Pain / agitation */
+  .pain { background: var(--cream); }
+  .pain-grid { display:grid; grid-template-columns: repeat(3,1fr); gap: 22px; margin-top: 10px; }
+  .pain-card { background: var(--panel); border:1px solid var(--line); border-radius: var(--radius); padding: 28px; }
+  .pain-card .ic { font-size: 24px; }
+  .pain-card h3 { font-size: 21px; margin: 12px 0 8px; }
+  .pain-card p { color: var(--ink-soft); font-size: 15px; }
+  .pain-turn { text-align:center; margin-top: 44px; font-family:'Cormorant Garamond',serif; font-style: italic; font-size: clamp(22px,2.8vw,30px); color: var(--coral); }
+
+  /* Why / outcomes */
+  .why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+  .why-card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 30px; }
+  .why-card .ic { font-size: 26px; }
+  .why-card h3 { font-size: 23px; margin: 14px 0 8px; }
+  .why-card p { color: var(--ink-soft); font-size: 15px; }
+
+  /* Who */
+  .who { background: var(--bg-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .who-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .who-card { background: var(--panel); border-radius: var(--radius); padding: 28px; border: 1px solid var(--line); transition: transform .2s ease, border-color .2s; }
+  .who-card:hover { transform: translateY(-4px); border-color: var(--line-red); }
+  .who-card .emoji { font-size: 30px; }
+  .who-card h3 { font-size: 21px; margin: 14px 0 6px; }
+  .who-card p { font-size: 14px; color: var(--ink-soft); }
+
+  /* Section image (photo replaces emoji; emoji shows as fallback until photo is added) */
+  .card-photo { position: relative; aspect-ratio: 4/3; border-radius: 12px; overflow: hidden; margin-bottom: 16px;
+    background: linear-gradient(135deg, #241416 0%, #0f0c0c 100%); border: 1px solid var(--line-red);
+    display: flex; align-items: center; justify-content: center; }
+  .card-photo .ph-emoji { font-size: 40px; opacity: .9; }
+  .card-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 22%; }
+
+  /* Journey */
+  .journey-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+  .step { position: relative; padding: 30px 24px; background: var(--panel); border-radius: var(--radius); border: 1px solid var(--line); }
+  .step .n { font-family: 'Cormorant Garamond', serif; font-size: 52px; font-weight: 700; color: transparent; -webkit-text-stroke: 1px var(--line-red); line-height: 1; }
+  .step h3 { font-size: 21px; margin: 8px 0 8px; }
+  .step p { font-size: 14px; color: var(--ink-soft); }
+
+  /* Command */
+  .command { background: linear-gradient(160deg, #151515 0%, #0c0c0c 100%); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); color: #fff; }
+  .command .section-head h2 { color: #fff; }
+  .command .section-head p { color: rgba(255,255,255,.8); }
+  .command .eyebrow { background: rgba(239,68,68,.12); color: var(--coral); }
+  .cmd-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+  .cmd-card { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.12); border-radius: var(--radius); padding: 30px; }
+  .cmd-card .ic { font-size: 26px; }
+  .cmd-card h3 { color: #fff; font-size: 23px; margin: 14px 0 8px; }
+  .cmd-card p { color: rgba(255,255,255,.78); font-size: 15px; }
+
+  /* Members */
+  .members-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .member-card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 30px; }
+  .member-card .emoji { font-size: 30px; }
+  .member-card h3 { font-size: 21px; margin: 12px 0 4px; }
+  .member-card .tag { font-size: 13px; color: var(--coral); font-weight: 600; }
+  .member-card p { font-size: 14px; color: var(--ink-soft); margin-top: 12px; }
+  .member-card .quote { margin-top: 16px; font-style: italic; color: #EDE9E7; font-size: 15px; border-left: 3px solid var(--coral); padding-left: 14px; font-family: 'Cormorant Garamond', serif; }
+  .center-cta { text-align: center; margin-top: 44px; }
+
+  /* Founder */
+  .founder { background: var(--cream); }
+  .founder-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 52px; align-items: center; }
+  .founder-photo { aspect-ratio: 1/1; border-radius: 24px; overflow: hidden; background: linear-gradient(135deg, #241416, #0f0c0c); border: 1px solid var(--line-red); display:flex; align-items:center; justify-content:center; box-shadow: 0 30px 70px -30px rgba(239,68,68,.35); }
+  .founder h2 { font-size: clamp(30px, 4vw, 44px); }
+  .founder p { color: var(--ink-soft); margin-top: 18px; font-size: 16px; }
+  .founder .fquote { margin-top: 22px; font-family: 'Cormorant Garamond', serif; font-size: 23px; color: var(--coral); font-style: italic; }
+  .founder .btn { margin-top: 26px; }
+
+  /* Testimonials */
+  .tst-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .tst-card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; }
+  .stars { color: var(--gold); font-size: 16px; letter-spacing: 2px; }
+  .tst-card p { font-size: 17px; margin: 14px 0 20px; color: #EDE9E7; font-family: 'Cormorant Garamond', serif; font-style: italic; line-height: 1.45; }
+  .tst-person { display: flex; align-items: center; gap: 12px; }
+  .avatar { width: 46px; height: 46px; border-radius: 50%; background: linear-gradient(135deg, var(--berry), var(--coral-dark)); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:700; flex-shrink:0; }
+  .tst-person .nm { font-weight: 600; font-size: 15px; }
+  .tst-person .rl { font-size: 13px; color: var(--ink-soft); }
+
+  /* FAQ */
+  .faq { background: var(--bg-2); border-top: 1px solid var(--line); }
+  .faq-wrap { max-width: 760px; margin: 0 auto; }
+  .faq-item { background: var(--panel); border:1px solid var(--line); border-radius: 14px; margin-bottom: 14px; overflow: hidden; }
+  .faq-q { width:100%; text-align:left; background:none; border:0; padding: 20px 24px; font-size: 16px; font-weight: 600; color: #fff; cursor: pointer; display:flex; justify-content:space-between; gap: 16px; align-items:center; font-family:'Manrope',sans-serif; }
+  .faq-q .pm { color: var(--coral); font-size: 22px; flex-shrink:0; transition: transform .2s; }
+  .faq-a { max-height: 0; overflow: hidden; transition: max-height .3s ease; }
+  .faq-a p { padding: 0 24px 20px; color: var(--ink-soft); font-size: 15px; }
+  .faq-item.open .faq-a { max-height: 240px; }
+  .faq-item.open .pm { transform: rotate(45deg); }
+
+  /* Final */
+  .final { background: radial-gradient(700px 400px at 50% 0%, rgba(239,68,68,0.18), transparent 70%), linear-gradient(160deg, var(--coral) 0%, var(--coral-dark) 100%); color: #fff; text-align: center; }
+  .final h2 { font-size: clamp(32px, 4.6vw, 52px); color: #fff; max-width: 780px; margin: 0 auto; }
+  .final p { font-size: 19px; color: rgba(255,255,255,.92); margin: 20px auto 16px; max-width: 580px; }
+  .final .urgency { font-size: 14px; color: rgba(255,255,255,.9); margin-bottom: 30px; }
+  .final .guarantee { margin-top: 20px; font-size: 14px; color: rgba(255,255,255,.9); }
+
+  /* Footer */
+  footer { background: #0c0c0c; border-top: 1px solid var(--line); color: rgba(255,255,255,.7); padding: 56px 0 34px; text-align: center; }
+  footer .logo { color: #fff; font-size: 27px; margin-bottom: 12px; }
+  footer .tagline { font-size: 15px; margin-bottom: 24px; color: var(--ink-soft); }
+  footer .fnav { display: flex; gap: 26px; justify-content: center; flex-wrap: wrap; margin-bottom: 28px; }
+  footer .fnav a { font-size: 14px; color: rgba(255,255,255,.7); }
+  footer .fnav a:hover { color: #fff; }
+  footer .copy { font-size: 13px; color: rgba(255,255,255,.45); border-top: 1px solid rgba(255,255,255,.10); padding-top: 22px; }
+
+  @media (max-width: 900px) {
+    .hero-grid, .founder-grid { grid-template-columns: 1fr; }
+    .founder-photo { max-width: 420px; margin: 0 auto; }
+    .why-grid, .cmd-grid { grid-template-columns: 1fr; }
+    .who-grid, .journey-grid, .members-grid, .tst-grid, .pain-grid { grid-template-columns: repeat(2, 1fr); }
+    .nav-links { display: none; }
+    .menu-toggle { display: block; }
+    .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 70px; left: 0; right: 0; background: var(--cream); padding: 20px 6%; gap: 18px; border-bottom: 1px solid var(--line); }
+    .float-card { display: none; }
+  }
+  @media (max-width: 560px) {
+    section { padding: 60px 0; }
+    .who-grid, .journey-grid, .members-grid, .tst-grid, .pain-grid { grid-template-columns: 1fr; }
+    .nav-cta .btn-ghost { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ANNOUNCEMENT -->
+<div class="announce">
+  🎓 Next FREE Live Masterclass: <strong>Saturday, 7:00 PM IST</strong> — limited seats
+  <a href="workshop.html">Save my spot →</a>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="container nav">
+    <div class="logo">GrowthStack<span> AI</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#why">Why It Works</a></li>
+      <li><a href="#who">Who It's For</a></li>
+      <li><a href="#command">What's Inside</a></li>
+      <li><a href="#stories">Results</a></li>
+      <li><a href="#founder">About</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <div class="nav-cta">
+      <button class="btn btn-primary" onclick="location.href='workshop.html'">Join Free Workshop</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="badge-live"><span class="dot"></span> Free live masterclass · 180+ women already inside</span>
+      <h1>You already have the skill. Let's build the <em>business</em>.</h1>
+      <p class="lead">GrowthStack AI helps everyday women turn what they're good at into a real business. You get easy AI tools, ready-made templates, and simple step-by-step help from Mrunali. No tech knowledge needed. Nothing left to guess.</p>
+      <ul class="hero-bullets">
+        <li><span class="ck">✓</span> Build a business that works for you — without the daily stress</li>
+        <li><span class="ck">✓</span> Let easy AI tools do a week's work in one afternoon</li>
+        <li><span class="ck">✓</span> Get help at every step — from your first sale to your next one</li>
+      </ul>
+      <div class="hero-actions">
+        <button class="btn btn-primary btn-lg" onclick="location.href='workshop.html'">Save My Free Seat →</button>
+        <span class="micro">🎟️ It's free · 90 minutes · nothing to install</span>
+      </div>
+      <div class="social-proof">
+        <div class="avatars"><span>A</span><span>P</span><span>R</span><span>N</span><span>M</span></div>
+        <div class="txt"><span class="stars">★★★★★</span><br>Rated 4.9/5 by women who started exactly where you are</div>
+      </div>
+    </div>
+    <div class="hero-media">
+      <div class="float-card"><div class="big">180+</div>women empowered</div>
+      <div class="media-frame">
+        <img src="assets/mrunali.webp" alt="Mrunali, founder of GrowthStack AI" style="width:100%;height:100%;object-fit:cover;object-position:center top;" />
+        <div class="play-badge">
+          <div class="play-circle">▶</div>
+          <div>
+            <div class="t1">A 2-min message from Mrunali</div>
+            <div class="t2">Why I built GrowthStack AI</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STRIP -->
+<div class="strip">
+  <div class="container strip-inner">
+    <span>AI TOOLS</span><span>·</span><span>FUNNEL TEMPLATES</span><span>·</span><span>META ADS PLAYBOOKS</span><span>·</span><span>LIVE GUIDANCE</span><span>·</span><span>GLOBAL COMMUNITY</span>
+  </div>
+</div>
+
+<!-- PAIN -->
+<section class="pain">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Sound familiar?</span>
+      <h2>You're not behind. You just never got the right help.</h2>
+      <p>So many talented women stay hidden — not because they aren't good, but because no one ever showed them the way. If this sounds like you, you're in the right place.</p>
+    </div>
+    <div class="pain-grid">
+      <div class="pain-card"><div class="ic">🌀</div><h3>"I know I'm good, but no one sees me."</h3><p>You do great work, yet customers keep going to others who are louder, not better.</p></div>
+      <div class="pain-card"><div class="ic">📚</div><h3>"I've bought courses that went nowhere."</h3><p>Lots of videos, but nothing actually changed. You're tired of learning and ready to do.</p></div>
+      <div class="pain-card"><div class="ic">⏳</div><h3>"I'm doing everything myself, all the time."</h3><p>No help, no tools — just you, tired and stretched thin, wondering how others grow.</p></div>
+    </div>
+    <div class="pain-turn">Now imagine having a clear plan, easy tools, and a group of women cheering you on. 👇</div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Why It Works</span>
+      <h2>Your skill plus the right help changes everything</h2>
+      <p>This isn't just talk to make you feel good. It's real, hands-on help. Here's what you'll actually get.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card"><div class="ic">🌱</div><h3>Feel Like a Real Business Owner</h3><p>Go from "someone with a skill" to a confident woman who is proud to run her own business.</p></div>
+      <div class="why-card"><div class="ic">⚙️</div><h3>Simple Ways to Get Customers</h3><p>Easy setups that bring in customers even while you sleep — no chasing or begging needed.</p></div>
+      <div class="why-card"><div class="ic">🤖</div><h3>AI That Works For You</h3><p>Let easy AI tools handle your posts, replies, and busywork. Get your free time back.</p></div>
+      <div class="why-card"><div class="ic">🤝</div><h3>You're Never Alone</h3><p>Live help and a group of women who cheer for your wins and answer when you're stuck.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO -->
+<section id="who" class="who">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Who It's For</span>
+      <h2>Built for women ready to lead their own way</h2>
+      <p>Whatever stage you're at, if you're serious about building something of your own, you belong here.</p>
+    </div>
+    <div class="who-grid">
+      <div class="who-card"><div class="card-photo"><span class="ph-emoji">👗</span><img src="assets/who-product.svg" alt="Woman product business owner in her boutique" loading="lazy" onerror="this.remove()"></div><h3>Product Business Owners</h3><p>Turn your handmade or curated products into a brand people seek out.</p></div>
+      <div class="who-card"><div class="card-photo"><span class="ph-emoji">💇‍♀️</span><img src="assets/who-salon.svg" alt="Woman salon owner in her salon" loading="lazy" onerror="this.remove()"></div><h3>Salon & Service Providers</h3><p>Fill your calendar and build loyal clients with modern marketing.</p></div>
+      <div class="who-card"><div class="card-photo"><span class="ph-emoji">🎯</span><img src="assets/who-coach.svg" alt="Woman coach or consultant" loading="lazy" onerror="this.remove()"></div><h3>Coaches & Consultants</h3><p>Package your expertise into offers that sell while you sleep.</p></div>
+      <div class="who-card"><div class="card-photo"><span class="ph-emoji">📱</span><img src="assets/who-creator.svg" alt="Woman content creator filming on her phone" loading="lazy" onerror="this.remove()"></div><h3>Creators & Personal Brands</h3><p>Grow an audience that trusts you — and knows how to buy from you.</p></div>
+      <div class="who-card"><div class="card-photo"><span class="ph-emoji">🚀</span><img src="assets/who-beginner.svg" alt="Young woman starting her digital business at a laptop" loading="lazy" onerror="this.remove()"></div><h3>Aspiring Digital Entrepreneurs</h3><p>Start from zero with a clear roadmap and real support.</p></div>
+      <div class="who-card"><div class="card-photo"><span class="ph-emoji">✨</span><img src="assets/who-independent.svg" alt="Confident, independent woman" loading="lazy" onerror="this.remove()"></div><h3>Women Seeking Independence</h3><p>Build income and confidence entirely on your own terms.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY -->
+<section id="journey">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The Path</span>
+      <h2>From "someday" to done — in four easy steps</h2>
+      <p>A simple, proven path from your first free class to running a business you're proud of.</p>
+    </div>
+    <div class="journey-grid">
+      <div class="step"><div class="n">01</div><h3>Join the Free Class</h3><p>Start with a live class that shows you what's possible — and your very first step.</p></div>
+      <div class="step"><div class="n">02</div><h3>Learn the Basics</h3><p>Understand the simple building blocks behind every successful business.</p></div>
+      <div class="step"><div class="n">03</div><h3>Do It With Help</h3><p>Put it into action using ready-made templates, easy AI tools, and real support.</p></div>
+      <div class="step"><div class="n">04</div><h3>Grow With Confidence</h3><p>Watch your business grow, and finally feel proud and in charge.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMAND -->
+<section id="command" class="command">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What's Inside</span>
+      <h2>Everything you need, all in one place</h2>
+      <p>This isn't another course to sit through. It's everything you need to actually get things done — together in one place.</p>
+    </div>
+    <div class="cmd-grid">
+      <div class="cmd-card"><div class="ic">🤖</div><h3>Easy AI Tools</h3><p>Save hours every week by letting simple AI tools do the boring, repeated work for you.</p></div>
+      <div class="cmd-card"><div class="ic">🧩</div><h3>Ready-Made Templates</h3><p>Fill-in-the-blank templates so you never have to start from a blank page again.</p></div>
+      <div class="cmd-card"><div class="ic">📈</div><h3>Simple Ad Guides</h3><p>Easy, tested ways to run Facebook and Instagram ads and reach the right people.</p></div>
+      <div class="cmd-card"><div class="ic">🧭</div><h3>Step-by-Step Help</h3><p>Clear plans and live support, so you always know exactly what to do next.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- MEMBERS -->
+<section id="stories">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Real Results</span>
+      <h2>Women who started exactly where you are</h2>
+      <p>From uncertain to unstoppable — here's what happens when talent meets the right systems.</p>
+    </div>
+    <div class="members-grid">
+      <div class="member-card">
+        <div class="card-photo"><span class="ph-emoji">👗</span><img src="assets/story-saree.svg" alt="Proud saree business owner in her store" loading="lazy" onerror="this.remove()"></div><h3>The Saree Business Owner</h3><div class="tag">Before → After</div>
+        <p>Selling occasionally to friends, unsure how to reach new customers — now running a recognizable brand with consistent online orders.</p>
+        <div class="quote">"I finally see myself as a business owner, not just someone with a hobby."</div>
+      </div>
+      <div class="member-card">
+        <div class="card-photo"><span class="ph-emoji">💇‍♀️</span><img src="assets/story-salon.svg" alt="Confident salon owner in a busy salon" loading="lazy" onerror="this.remove()"></div><h3>The Salon Owner</h3><div class="tag">Before → After</div>
+        <p>Relying on walk-ins and word of mouth — now booked out weeks ahead with a steady stream of clients from her marketing.</p>
+        <div class="quote">"The handholding made all the difference. I never felt lost."</div>
+      </div>
+      <div class="member-card">
+        <div class="card-photo"><span class="ph-emoji">🚀</span><img src="assets/story-founder.svg" alt="Excited first-time woman founder launching at her laptop" loading="lazy" onerror="this.remove()"></div><h3>The First-Time Founder</h3><div class="tag">Before → After</div>
+        <p>Starting from complete zero with no tech background — now confidently running her own digital business with real income.</p>
+        <div class="quote">"I went from having an idea to actually launching. That's everything."</div>
+      </div>
+    </div>
+    <div class="center-cta">
+      <button class="btn btn-primary" onclick="location.href='workshop.html'">Start With the Free Workshop →</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDER -->
+<section id="founder" class="founder">
+  <div class="container founder-grid">
+    <div class="founder-photo">
+      <img src="assets/mrunali.webp" alt="Mrunali" style="width:100%;height:100%;object-fit:cover;object-position:center top;" />
+    </div>
+    <div>
+      <span class="eyebrow">About Mrunali</span>
+      <h2>My story — and maybe yours too</h2>
+      <p>When I started out, I felt exactly what you might be feeling right now. I had the skill and the drive, but nobody to show me the way. So I had to figure out everything on my own — one mistake at a time.</p>
+      <p>For a long time I was confused. How do I get customers? Which tools should I use? Why is all my hard work not turning into real money? There was no guide, no clear plan, and no one who truly understood how hard it was.</p>
+      <p>That is exactly why I built GrowthStack AI. I promised myself that no woman should have to struggle alone the way I did. Here, you get the map I never had — simple steps, the right tools, and people who have your back.</p>
+      <div class="fquote">"I've been right where you are. Now my only job is to hand you the map I wish someone had given me."</div>
+      <button class="btn btn-primary" onclick="location.href='workshop.html'">Learn From Mrunali — It's Free →</button>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Wall of Love</span>
+      <h2>Loved by women building bold things</h2>
+    </div>
+    <div class="tst-grid">
+      <div class="tst-card"><div class="stars">★★★★★</div><p>The patience and step-by-step support here is unlike anything I've found. I always know what to do next.</p><div class="tst-person"><div class="avatar">A</div><div><div class="nm">Anjali R.</div><div class="rl">Product Business Owner</div></div></div></div>
+      <div class="tst-card"><div class="stars">★★★★★</div><p>I joined nervous and unsure. A few months in, I have systems, clients, and — finally — real confidence.</p><div class="tst-person"><div class="avatar">P</div><div><div class="nm">Priya M.</div><div class="rl">Salon Owner</div></div></div></div>
+      <div class="tst-card"><div class="stars">★★★★★</div><p>The AI tools alone saved me hours every week. But it's the community that keeps me showing up.</p><div class="tst-person"><div class="avatar">S</div><div><div class="nm">Sneha K.</div><div class="rl">Coach & Consultant</div></div></div></div>
+      <div class="tst-card"><div class="stars">★★★★★</div><p>Mrunali genuinely cares. The handholding got me from idea to launch when I'd been stuck for a year.</p><div class="tst-person"><div class="avatar">R</div><div><div class="nm">Ritika S.</div><div class="rl">Digital Entrepreneur</div></div></div></div>
+      <div class="tst-card"><div class="stars">★★★★★</div><p>Everything is structured and doable. No fluff — just clear steps that actually move my business forward.</p><div class="tst-person"><div class="avatar">N</div><div><div class="nm">Neha T.</div><div class="rl">Creator & Personal Brand</div></div></div></div>
+      <div class="tst-card"><div class="stars">★★★★★</div><p>This community gave me the independence I always wanted. I'm running my own business on my own terms.</p><div class="tst-person"><div class="avatar">M</div><div><div class="nm">Meera J.</div><div class="rl">Founder</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="faq">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Questions</span>
+      <h2>Everything you're wondering, answered</h2>
+    </div>
+    <div class="faq-wrap">
+      <div class="faq-item"><button class="faq-q">Do I need any tech or marketing experience? <span class="pm">+</span></button><div class="faq-a"><p>Not at all. GrowthStack AI is built for women starting from zero. Everything is step-by-step, and the AI tools do the heavy lifting for you.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Is the workshop really free? <span class="pm">+</span></button><div class="faq-a"><p>Yes — the live masterclass is 100% free. It's the best way to see how everything works before deciding if the community is right for you.</p></div></div>
+      <div class="faq-item"><button class="faq-q">I'm very busy. How much time does this take? <span class="pm">+</span></button><div class="faq-a"><p>The class is about 90 minutes. And the whole idea inside is to use easy tools and AI that save you time — so you work smarter, not longer.</p></div></div>
+      <div class="faq-item"><button class="faq-q">What kind of business does this work for? <span class="pm">+</span></button><div class="faq-a"><p>Product brands, salons and services, coaching, content and personal brands, and complete beginners. If you have a skill or an idea, there's a path for you.</p></div></div>
+      <div class="faq-item"><button class="faq-q">What happens after I register? <span class="pm">+</span></button><div class="faq-a"><p>You'll get your confirmation and joining details, plus a reminder before we go live. Just show up ready to take notes and take action.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section id="final" class="final">
+  <div class="container">
+    <h2>You're just one small step away from starting</h2>
+    <p>Join the next free live class and leave with a clear plan, the right tools, and a group of women who won't let you give up.</p>
+    <div class="urgency">⏰ Only a few seats in each live class — and they fill up fast.</div>
+    <button class="btn btn-light btn-lg" onclick="location.href='workshop.html'">Save My Free Seat →</button>
+    <div class="guarantee">Free · No pressure · Leave with something you can use right away</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="logo">GrowthStack<span style="color:var(--coral)"> AI</span></div>
+    <div class="tagline">Your identity. Your business. Your tribe.</div>
+    <div class="fnav">
+      <a href="#why">Why It Works</a>
+      <a href="#who">Who It's For</a>
+      <a href="#command">What's Inside</a>
+      <a href="#stories">Results</a>
+      <a href="#founder">About</a>
+      <a href="workshop.html">Free Workshop</a>
+    </div>
+    <div class="copy">© 2026 GrowthStack AI · Led by Mrunali. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('menuToggle').addEventListener('click', function () {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+  document.querySelectorAll('#navLinks a').forEach(function (a) {
+    a.addEventListener('click', function () { document.getElementById('navLinks').classList.remove('open'); });
+  });
+  document.querySelectorAll('.faq-q').forEach(function (q) {
+    q.addEventListener('click', function () { q.parentElement.classList.toggle('open'); });
+  });
+</script>
+</body>
+</html>
